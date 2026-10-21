@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-etoile-navy: #082052;
+    --color-etoile-navy-hover: #0e2e6e;
+    --color-etoile-navy-dark: #041029;
+    --color-etoile-navy-surface: #edf3fa;
+    --color-etoile-cream: #F8F0E5;
+    --color-etoile-cream-surface: #f1e7d8;
+    --color-etoile-cream-border: #e2d5c1;
+    --color-etoile-gold: #C59B27;
+    --color-etoile-charcoal: #222d3d;
+    --color-etoile-muted: #5a677a;
+    --color-etoile-white: #ffffff;
+  }
+
+  body {
+    background-color: #F8F0E5;
+    color: #222d3d;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Primary Etoile Palette utilities (#082052 Navy & #F8F0E5 Cream) */
+.bg-etoile-navy {
+  background-color: #082052;
+}
+.hover\:bg-etoile-navy-hover:hover {
+  background-color: #0e2e6e;
+}
+.bg-etoile-navy-dark {
+  background-color: #041029;
+}
+.bg-etoile-navy-surface {
+  background-color: #edf3fa;
+}
+.text-etoile-navy {
+  color: #082052;
+}
+.border-etoile-navy {
+  border-color: #082052;
+}
+
+.bg-etoile-cream {
+  background-color: #F8F0E5;
+}
+.bg-etoile-cream-surface {
+  background-color: #f1e7d8;
+}
+.text-etoile-cream {
+  color: #F8F0E5;
+}
+.border-etoile-cream {
+  border-color: #e2d5c1;
+}
+
+.bg-etoile-gold {
+  background-color: #C59B27;
+}
+.text-etoile-gold {
+  color: #C59B27;
+}
+
+/* Backwards compatibility for dusk classes mapped to the new palette */
+.bg-dusk-navy {
+  background-color: #082052;
+}
+.hover\:bg-dusk-navy-hover:hover {
+  background-color: #0e2e6e;
+}
+.bg-dusk-navy-dark {
+  background-color: #041029;
+}
+.bg-dusk-navy-surface {
+  background-color: #f1e7d8;
+}
+.text-dusk-navy {
+  color: #082052;
+}
+.border-dusk-navy {
+  border-color: #082052;
+}
+.border-dusk-navy-surface {
+  border-color: #e2d5c1;
+}
+
+.bg-dusk-cyan {
+  background-color: #153e8a;
+}
+.hover\:bg-dusk-cyan-hover:hover {
+  background-color: #0e2e6e;
+}
+.bg-dusk-cyan-light {
+  background-color: #f1e7d8;
+}
+.text-dusk-cyan {
+  color: #153e8a;
+}
+.border-dusk-cyan {
+  border-color: #153e8a;
+}
+
+.text-dusk-charcoal {
+  color: #222d3d;
+}
+.text-dusk-charcoal-muted {
+  color: #5a677a;
+}
+.text-dusk-charcoal-light {
+  color: #7f8c9f;
+}
+
+.bg-dusk-canvas {
+  background-color: #F8F0E5;
+}
+
+/* Smooth micro-interactions */
+button, a, input, select {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 150ms;
+}
+
+/* Hide scrollbar for step navigation and tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print styles for institutional reporting */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #082052 !important;
+  }
+  header, nav, .no-print {
+    display: none !important;
+  }
+}

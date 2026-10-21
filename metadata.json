@@ -1,0 +1,6 @@
+{
+  "name": "Dar-e-Arqam M&E Report System",
+  "description": "Mobile Monitoring & Evaluation Report Management System for Dar-e-Arqam Schools Central Regions with offline-first form wizard, automatic scoring, and multi-format exports.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

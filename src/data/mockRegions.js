@@ -1,0 +1,66 @@
+// Mock Regions for Dar-e-Arqam Schools Central Directorate
+
+export const mockRegions = [
+  {
+    id: 'reg_lahore_central',
+    name: 'Lahore Central Region',
+    code: 'LHR-C',
+    regionalDirector: 'Prof. Muhammad Arshad Nadeem',
+    regionalManager: 'Hafiz Muhammad Bilal',
+    totalBranches: 18,
+    activeMonitoringVisits: 14,
+    avgScore: 84.6,
+  },
+  {
+    id: 'reg_lahore_east',
+    name: 'Lahore East Region',
+    code: 'LHR-E',
+    regionalDirector: 'Dr. Abdul Rasheed Qureshi',
+    regionalManager: 'Usman Ghani Tariq',
+    totalBranches: 14,
+    activeMonitoringVisits: 11,
+    avgScore: 81.2,
+  },
+  {
+    id: 'reg_faisalabad',
+    name: 'Faisalabad Region',
+    code: 'FSD',
+    regionalDirector: 'Mian Tariq Mehmood',
+    regionalManager: 'Qari Abdul Qayyum',
+    totalBranches: 16,
+    activeMonitoringVisits: 12,
+    avgScore: 78.4,
+  },
+  {
+    id: 'reg_gujranwala',
+    name: 'Gujranwala Region',
+    code: 'GRW',
+    regionalDirector: 'Sardar Muhammad Aslam',
+    regionalManager: 'Muhammad Zubair Cheema',
+    totalBranches: 12,
+    activeMonitoringVisits: 9,
+    avgScore: 86.1,
+  },
+  {
+    id: 'reg_sialkot',
+    name: 'Sialkot & Narowal Region',
+    code: 'SKT',
+    regionalDirector: 'Chaudhry Riaz Ahmad',
+    regionalManager: 'Muhammad Imran Bajwa',
+    totalBranches: 10,
+    activeMonitoringVisits: 8,
+    avgScore: 79.8,
+  },
+  {
+    id: 'reg_sahiwal',
+    name: 'Sahiwal & Okara Region',
+    code: 'SWL',
+    regionalDirector: 'Malik Zafar Iqbal',
+    regionalManager: 'Hafiz Muhammad Tahir',
+    totalBranches: 9,
+    activeMonitoringVisits: 7,
+    avgScore: 82.5,
+  },
+];
+
+export default mockRegions;
